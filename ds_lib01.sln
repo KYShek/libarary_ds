@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ds_lib1", "ds_lib1\ds_lib1.vcxproj", "{01D11D2C-A950-4CF4-B279-29FEA272C43E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01D11D2C-A950-4CF4-B279-29FEA272C43E}.Debug|x64.ActiveCfg = Debug|x64
+		{01D11D2C-A950-4CF4-B279-29FEA272C43E}.Debug|x64.Build.0 = Debug|x64
+		{01D11D2C-A950-4CF4-B279-29FEA272C43E}.Release|x64.ActiveCfg = Release|x64
+		{01D11D2C-A950-4CF4-B279-29FEA272C43E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB386EC4-E76B-4FB5-A2F8-A8182DDE8FEE}
+	EndGlobalSection
+EndGlobal

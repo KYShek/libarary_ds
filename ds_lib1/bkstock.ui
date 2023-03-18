@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bkstock</class>
+ <widget class="QWidget" name="bkstock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>bkstock</string>
+  </property>
+  <widget class="QPushButton" name="btn2_bkin">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>360</y>
+     <width>99</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>书籍入库</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn3_bkout">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>360</y>
+     <width>99</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>书籍出库</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn4_quit">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>360</y>
+     <width>99</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1201</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn2_bkin</sender>
+   <signal>clicked()</signal>
+   <receiver>bkstock</receiver>
+   <slot>BkinButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn3_bkout</sender>
+   <signal>clicked()</signal>
+   <receiver>bkstock</receiver>
+   <slot>BkoutButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>450</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn4_quit</sender>
+   <signal>clicked()</signal>
+   <receiver>bkstock</receiver>
+   <slot>QuitloginButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>449</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>466</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>QueryButton()</slot>
+  <slot>BkinButton()</slot>
+  <slot>BkoutButton()</slot>
+  <slot>QuitloginButton()</slot>
+ </slots>
+</ui>

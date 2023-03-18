@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bookout</class>
+ <widget class="QWidget" name="bookout">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>231</width>
+    <height>132</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>bookout</string>
+  </property>
+  <widget class="QPushButton" name="But_BookOut">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出库</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ID">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ID">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>40</y>
+     <width>18</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID:</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>But_BookOut</sender>
+   <signal>clicked()</signal>
+   <receiver>bookout</receiver>
+   <slot>BookOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BookOut()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>querybk</class>
+ <widget class="QWidget" name="querybk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1211</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>querybk</string>
+  </property>
+  <widget class="QPushButton" name="btn4_starorder">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>650</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按书评度排序</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn3_intereorder">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>650</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按读者兴趣度排序</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>书籍ISBN:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn5_timeorder">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>650</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按出版时间排序</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>书名：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>作者：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>20</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>150</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnt2_preciseq">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>150</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>精确查询</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出版社：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>70</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn1_vagueq">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>20</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模糊查询</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>201</y>
+     <width>1191</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="btn6_defalt">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>650</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按编号排序</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn4_starorder</sender>
+   <signal>clicked()</signal>
+   <receiver>querybk</receiver>
+   <slot>ScoreRank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>507</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn3_intereorder</sender>
+   <signal>clicked()</signal>
+   <receiver>querybk</receiver>
+   <slot>TimesRank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn5_timeorder</sender>
+   <signal>clicked()</signal>
+   <receiver>querybk</receiver>
+   <slot>DateRank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>754</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn6_defalt</sender>
+   <signal>clicked()</signal>
+   <receiver>querybk</receiver>
+   <slot>DefaltRank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>968</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1018</x>
+     <y>523</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn1_vagueq</sender>
+   <signal>clicked()</signal>
+   <receiver>querybk</receiver>
+   <slot>VagueQ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>682</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnt2_preciseq</sender>
+   <signal>clicked()</signal>
+   <receiver>querybk</receiver>
+   <slot>PreciseQ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>424</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ScoreRank()</slot>
+  <slot>TimesRank()</slot>
+  <slot>DateRank()</slot>
+  <slot>DefaltRank()</slot>
+  <slot>VagueQ()</slot>
+  <slot>PreciseQ()</slot>
+ </slots>
+</ui>

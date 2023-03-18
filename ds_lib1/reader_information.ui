@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>reader_information</class>
+ <widget class="QWidget" name="reader_information">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>reader_information</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>911</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_account">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>账号：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>权限：读者</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>姓名：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>10</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>个人信息</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_acvalue">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_nvalue">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn2_rebrw">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>340</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>续借</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn1_brwbk">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>340</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>借阅</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn3_quitlogin">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>340</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>911</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn1_brwbk</sender>
+   <signal>clicked()</signal>
+   <receiver>reader_information</receiver>
+   <slot>BorrowbkButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn2_rebrw</sender>
+   <signal>clicked()</signal>
+   <receiver>reader_information</receiver>
+   <slot>ReborrowbkButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>352</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn3_quitlogin</sender>
+   <signal>clicked()</signal>
+   <receiver>reader_information</receiver>
+   <slot>QuitloginButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>770</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>800</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reader_information</sender>
+   <signal>SendCurrentRow(int)</signal>
+   <receiver>reader_information</receiver>
+   <slot>RowSelected(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>341</x>
+     <y>409</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>reader_information</receiver>
+   <slot>TableClicked(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>667</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>SendCurrentRow(int)</signal>
+  <slot>BorrowbkButton()</slot>
+  <slot>ReborrowbkButton()</slot>
+  <slot>QuitloginButton()</slot>
+  <slot>TableClicked(int,int)</slot>
+  <slot>RowSelected(int)</slot>
+ </slots>
+</ui>
