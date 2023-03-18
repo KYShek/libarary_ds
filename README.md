@@ -1,3 +1,3 @@
-VS: Visual Studio Education Version 2022
+VS: Visual Studio Community 2022
 
 C++ 11
